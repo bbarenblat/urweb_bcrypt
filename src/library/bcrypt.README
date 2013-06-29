@@ -1,0 +1,3 @@
+The bcrypt directory contains a checkout of the Openwall bcrypt implementation
+v1.2.  That implementation is in the public domain worldwide because it has
+been so released by the author.
