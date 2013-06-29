@@ -25,7 +25,8 @@ AC_CONFIG_MACRO_DIR([m4])
 
 # Build a C library.
 AC_PROG_CC
-AM_PROG_AR
+# Automake 1.12 seems to require this, but automake 1.11 doesn't recognize it.
+m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
 LT_INIT
 
 # bcrypt has some x86 assembly.
